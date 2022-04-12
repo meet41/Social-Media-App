@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="styleh.css">  
+  <title>MeetNow : Home Page</title>
+</head>
+<body>
+  <!-- <i class="fa fa-bell"></i> -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRyLHbmWg-L3Ct6XEtw6Q69mB5MHy59crPdg&usqp=CAU" height="30" style="border-radius: 50%;">
+            <h1>MeetNow</h1>
+        </div>
+        <div class="topbar-center">
+            <div class="topbar-search">
+                <i class="search-icon fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+    </div>
+    <div class="menu"><br><br>
+      <center><a href="#"><i class="fa fa-home" style="font-size: 50px;"></i></a></center><br><br>
+      <center><a href="#"><i class="fa fa-users" style="font-size: 50px;"></i></a></center><br><br>
+      <center><a href="#"><i class="fa fa-bell" style="font-size: 50px;"></i></a></center><br><br>
+      <center><a href="indexa.html"><img src="meet-dp.jpg" alt="meet" height="70"><p><h3 style="color: white;">Meet Patel</h3></p></i></a></center>
+    </div>
+    <div class="row">
+        <div class="column" style="background-color: rgb(190, 87, 241);height: 550px;">
+            <div class="col1">
+                <img src="meet-dp.jpg" alt="" height="50" style="border-radius: 50%;">
+                <h2 style="color: red;text-decoration: underline;">Meet Patel</h2>
+                <p><u>Surat,Gujarat</u></p>
+                <div class="post">
+                  <p style="border: 2px solid black;height: 300;">Hii...Hello</p>
+                    <button onclick="showcommentform()"><i class="fa fa-comment" style="color: black;font-size: 30px;"></i></button>
+                    <a class="heart" href="#"><i class="fa fa-heart" style="color: black;font-size: 30px;"onclick="changeBackground(color)"></i></a>
+                    <div id="mylocation"></div>
+                </div>
+            </div>
+            <div class=""> 
+              <input type="file">
+              <input type="submit" onclick="submit()">
+           </div>
+        </div>
+      </div>
+</body>
+<script>
+function showcommentform() 
+{  
+    var data="Name:<br><input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='50'></textarea><br><input type='submit' value='comment'><br><br>";  
+    document.getElementById('mylocation').innerHTML=data;  
+}
+function changeBackground(color)
+{
+  var BackgroundColor = "RED";
+}
+function submit()
+{
+  alert("Uploaded Successfully...!");
+}
+</script>
+</html>

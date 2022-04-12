@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: yellow;
+    justify-content: center;
+    overflow: hidden;
+    scroll-behavior: auto;
+    height: 1000px;
+  }
+  .topbar {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 255, 0.846);
+    display: flex;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+  }
+  .column {
+    flex: 30%;
+    padding: 10px;
+    height: 500px;
+    width: 600px;
+    margin-right: 180px;
+    margin-left: 180px;
+  }
+  .right-logo{
+      border: 4px solid white;
+      border-radius: 40%;
+      height: 40px;
+      width: 35px;
+      position: relative;
+      margin-top: 500px;
+      background-color: rgb(56, 214, 56);
+  }
+  .topbar-left {
+    display: flex;
+    flex: 0.2;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    font-size: 25px;
+  }
+  h1 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .topbar-center {
+    font-family: sans-serif;
+    flex: 0.7;
+    display: flex;
+    justify-content: center;
+  }
+  .topbar-search {
+    width: 50%;
+    height: 24px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .topbar-search .search-icon {
+    margin: 0 10px;
+  }
+  .topbar-search input {
+    border: 0;
+    background-color: whitesmoke;
+    width: 70%;
+    color: black;
+  }
+  .topbar-search input:focus {
+    outline: none;
+  }
+  .topbar-right {
+    flex: 0.1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .line-container {
+    margin-right: 20px;
+    width: 24px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 20px;
+    transition: transform 1s ease, opacity 0.5s ease;
+    transform-origin: left;
+  }
+  .line-container.active .line-1 {
+    transform: rotate(45deg);
+  }
+  .line-container.active .line-2 {
+    opacity: 0;
+  }
+  .line-container.active .line-3 {
+    transform: rotate(-45deg);
+  }
+  .row{
+    margin-top: 10px;
+    margin-left: 300px;
+    justify-content: center;
+    width: 900px;
+  }
+  .menu {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background-color: black;
+  }
+  .heart:hover{
+    background-color: red;
+  }

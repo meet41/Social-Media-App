@@ -1,0 +1,29 @@
+.acc{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    justify-content: center;
+    border-radius: 30%;
+    border: 4px solid red;
+    box-shadow: 10px 30px 30px 30px #888888;
+}
+.i{
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 20px;
+}
+.user{
+    margin-top: 30px;
+    margin-bottom: 380px;
+    width: 100px;
+    color: blue;
+    font-size: 80px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.info{
+    margin-right: 200px;
+}
